@@ -1,0 +1,58 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - db/migrate/20161226152255_initial_migrate.rb
+    - db/migrate/20161226152256_views_migrate.rb
+    - db/migrate/20161226152257_seed_migrate.rb
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Max: 25
+
+Style/Documentation:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: true
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/AsciiComments:
+  Enabled: true
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: '()'
+    '%i': '[]'
+    '%I': '[]'
+    '%r': '{}'
+    '%w': '[]'
+    '%W': '[]'
+
+RSpec/AnyInstance:
+  Enabled: true
+
+RSpec/DescribeClass:
+  Enabled: true
+
+RSpec/DescribedClass:
+  Enabled: true
+
+RSpec/NotToNot:
+  EnforcedStyle: not_to
+
+Style/AsciiComments:
+  Description: 'Use only ascii symbols in comments.'
+  StyleGuide: '#english-comments'
+  Enabled: false

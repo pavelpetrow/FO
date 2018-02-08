@@ -1,0 +1,2 @@
+class LodgerController < ApplicationController
+end
