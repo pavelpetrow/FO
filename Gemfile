@@ -48,7 +48,7 @@ end
 
 # Better looking logging output
 gem 'awesome_print'
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap-sass', '~> 3.3.7'
 gem 'enumerize'
 gem 'pg', '~> 0.20.0'
 gem 'pry-rails'

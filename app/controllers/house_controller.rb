@@ -17,6 +17,6 @@ class HouseController < ApplicationController
   private
 
   def house_params
-    params.require(:record).permit(:street, :number)
+    params.require(:house).permit(:number, :city, :country, :street, :created_at, :updated_at)
   end
 end
